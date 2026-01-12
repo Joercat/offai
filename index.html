@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Offline Browser AI</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 10px; }
+        #chat { border: 1px solid #ccc; height: 300px; overflow-y: scroll; padding: 10px; margin-bottom: 10px; }
+        #status { font-size: 0.8em; color: gray; }
+    </style>
+</head>
+<body>
+    <h2>Local AI (Qwen 0.5B)</h2>
+    <div id="status">Loading model... (Initial download ~350MB)</div>
+    <div id="chat"></div>
+    <input type="text" id="userInput" placeholder="Ask something..." style="width: 80%" disabled>
+    <button id="sendBtn" disabled>Send</button>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
